@@ -13,7 +13,9 @@ NameSpace and ClassName MUST use ``StudlyCaps``
 namespace Vendor\Model;
 
 class NeonClassName {
+
 }
+
 ```
 ## 3. Class Constants, Properties, and Methods
 - Class Constants MUST use CAPITAL & UNDERSCORE for replacing space.
@@ -32,12 +34,13 @@ class NeonClassName {
     private $neon_property;
     
     public function getProperty() {
-        return $this->neon_property';
+        return $this->neon_property;
     }
     
     public function getVersion() {
         return NEON_VERSION_NUMBER;
     }
+    
 }
 ```
 
@@ -48,6 +51,7 @@ class NeonClassName {
 - For Function MUST be checking for making sure function not exists
 
 ```php
+
 $neon_variations = true;
 
 if ( ! function_exists('get_neon_vatiations') {
@@ -64,9 +68,11 @@ if ( ! function_exists('get_neon_vatiations') {
 - Even use include or Required for class MUST check ``class_exists``
 
 ```php
-if ( ! class_exists('Vendor\Model\NeonClassName') ) {
+
+if ( ! class_exists('\Vendor\Model\NeonClassName') ) {
     require_once __DIR__ . '/class.neon-name.php';
 }
+
 ```
 
 ## 6. Files
@@ -74,7 +80,9 @@ if ( ! class_exists('Vendor\Model\NeonClassName') ) {
 - Class File MUST be prefixed by ``class.``
 
 ```
+
 index.php
 home-page.php
 class.personal-menu.php
+
 ```
